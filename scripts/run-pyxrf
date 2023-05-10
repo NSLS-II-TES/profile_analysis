@@ -1,0 +1,5 @@
+export ENV_NAME=$(eval "echo $BS_AN_ENV | rev | cut -d/ -f1 | rev")
+export PYTHONPATH=/nsls2/data/tes/shared/config/bluesky_overlay/"$ENV_NAME"/lib/python3.10/site-packages
+source /opt/conda/bin/activate $BS_AN_ENV
+pyxrf
+
